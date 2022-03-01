@@ -19,12 +19,17 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              const Padding(padding: EdgeInsets.only(bottom: 40, left: 0, right: 0, top: 200),
+
+              const Padding(padding: EdgeInsets.only(
+                  bottom: 40, left: 0, right: 0, top: 200
+              ),
                child: Center(
                   child: FlutterLogo(),
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 15) ,
+              Padding(padding: const EdgeInsets.symmetric(
+                  vertical: 0, horizontal: 15
+              ) ,
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -34,7 +39,9 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+              Padding(padding: const EdgeInsets.symmetric(
+                  vertical: 10, horizontal: 15
+              ),
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -44,7 +51,9 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+              Padding(padding: const EdgeInsets.symmetric(
+                  vertical: 15, horizontal: 15
+              ),
                   child: ElevatedButton(onPressed: (){},
                     child: const Text("Login"),
                     style: ElevatedButton.styleFrom(
