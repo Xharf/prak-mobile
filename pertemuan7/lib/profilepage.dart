@@ -68,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
           SizedBox(height: 20.0),
           Text(
-            "@Wilson_je",
+            email!,
             style: TextStyle(
               fontWeight: FontWeight.w800,
               fontSize: 30.0,
