@@ -86,6 +86,17 @@ class _HomePageState extends State<HomePage> {
                 return _buildSuccessSection(userModel);
               }
             }
+            if(searchController.text == ''){
+              return Center(
+                  child: Text(
+                    "Tap on search icon",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32,
+                    ),
+                  )
+              );
+            }
             return _buildLoadingSection();
           },
         ),
